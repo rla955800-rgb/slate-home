@@ -1,0 +1,20 @@
+:root{
+--font-display:"Archivo","IBM Plex Sans KR",system-ui,sans-serif;
+--font-sans:"IBM Plex Sans KR","Archivo",system-ui,sans-serif;
+--font-mono:"IBM Plex Mono",ui-monospace,monospace;
+--weight-light:300;--weight-regular:400;--weight-medium:500;--weight-semibold:600;
+/* Scale */
+--fs-display-xl:88px;--fs-display-l:64px;--fs-display-m:48px;--fs-h1:36px;--fs-h2:28px;--fs-h3:22px;--fs-h4:18px;--fs-body-l:17px;--fs-body:15px;--fs-body-s:13px;--fs-caption:12px;--fs-label:11px;
+--lh-tight:1.0; /* @kind other */
+--lh-snug:1.2; /* @kind other */
+--lh-normal:1.5; /* @kind other */
+--lh-relaxed:1.7; /* @kind other */
+
+--tracking-display:-0.02em;--tracking-tight:-0.01em;--tracking-normal:0;--tracking-label:0.14em;--tracking-wide:0.24em;
+/* Roles */
+--type-display-family:var(--font-display);--type-display-weight:500;
+--type-heading-family:var(--font-sans);--type-heading-weight:500;
+--type-body-family:var(--font-sans);--type-body-weight:400;
+--type-label-family:var(--font-display);--type-label-weight:500;
+--type-price-family:var(--font-mono);
+}

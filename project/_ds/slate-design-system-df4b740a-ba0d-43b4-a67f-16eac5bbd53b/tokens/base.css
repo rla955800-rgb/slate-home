@@ -1,0 +1,7 @@
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{margin:0;font-family:var(--font-sans);font-size:var(--fs-body);line-height:var(--lh-normal);color:var(--text-primary);background:var(--surface-page)}
+a{color:var(--text-primary);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{color:var(--text-accent)}
+::selection{background:var(--ice-200);color:var(--charcoal-900)}
+:focus-visible{outline:1.5px solid var(--focus-ring);outline-offset:2px}

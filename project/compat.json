@@ -1,0 +1,35 @@
+{
+  "v": 1,
+  "mode": "omelette",
+  "root": "project/",
+  "title": "슬레이트 쇼핑몰 메인 홈페이지",
+  "entry": "Slate Home.dc.html",
+  "pages": [
+    {
+      "path": "Slate Home.dc.html",
+      "title": "Slate Home",
+      "kind": "page"
+    }
+  ],
+  "migratorVersion": "artifact-migrator (claude-design-backend ed667f7ac9c1)",
+  "createdAt": "2026-11-16T02:33:31.212Z",
+  "source": {
+    "v": 1,
+    "app": "claude-design",
+    "url": "https://claude.ai/design/p/977ad04b-13af-4d70-92de-430f4cf4b9a8",
+    "projectId": "977ad04b-13af-4d70-92de-430f4cf4b9a8",
+    "exportedAt": "2026-11-16T02:33:31.212Z"
+  },
+  "report": {
+    "itemsVersion": 2,
+    "pages": {
+      "total": 1,
+      "ok": 1,
+      "partial": 0,
+      "notMigrated": 0
+    },
+    "items": [],
+    "truncated": 0,
+    "truncatedLeftOut": 0
+  }
+}
