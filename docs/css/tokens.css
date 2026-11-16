@@ -1,0 +1,77 @@
+/* Slate design system tokens (from project/_ds). Fonts are loaded in index.html. */
+:root{
+/* Charcoal — primary neutral */
+--charcoal-950:#16181A;--charcoal-900:#1F2224;--charcoal-800:#2A2E31;--charcoal-700:#3A3F43;--charcoal-600:#565C61;--charcoal-500:#7A8086;--charcoal-400:#A3A8AD;--charcoal-300:#C8CCCF;--charcoal-200:#E1E3E5;--charcoal-100:#EFF0F1;--charcoal-50:#F7F7F7;--white:#FFFFFF;
+/* Ice blue — accent */
+--ice-900:#203D4F;--ice-800:#2A4E63;--ice-700:#386782;--ice-600:#4A82A1;--ice-500:#659FBE;--ice-400:#8DBBD3;--ice-300:#B3D3E4;--ice-200:#CFE4EF;--ice-100:#E6F1F7;--ice-50:#F3F8FB;
+/* Status — desaturated to sit with charcoal */
+--green-600:#3F7A5E;--green-100:#E4EFE9;--amber-600:#9A6A22;--amber-100:#F5ECDD;--red-600:#B4463C;--red-100:#F6E3E1;
+
+/* Semantic — surfaces */
+--surface-page:var(--white);--surface-subtle:var(--charcoal-50);--surface-muted:var(--charcoal-100);--surface-accent:var(--ice-100);--surface-accent-subtle:var(--ice-50);--surface-inverse:var(--charcoal-900);--surface-overlay:rgba(22,24,26,.48);
+/* Semantic — text */
+--text-primary:var(--charcoal-900);--text-secondary:var(--charcoal-600);--text-tertiary:var(--charcoal-500);--text-disabled:var(--charcoal-400);--text-inverse:var(--white);--text-inverse-secondary:var(--charcoal-300);--text-accent:var(--ice-700);--text-on-accent:var(--charcoal-900);
+/* Semantic — borders */
+--border-hairline:var(--charcoal-200);--border-default:var(--charcoal-300);--border-strong:var(--charcoal-900);--border-accent:var(--ice-500);--border-inverse:var(--charcoal-700);
+/* Semantic — actions */
+--action-primary:var(--charcoal-900);--action-primary-hover:var(--charcoal-700);--action-primary-press:var(--charcoal-950);--action-accent:var(--ice-200);--action-accent-hover:var(--ice-300);--focus-ring:var(--ice-500);
+/* Semantic — status */
+--status-success:var(--green-600);--status-success-bg:var(--green-100);--status-warning:var(--amber-600);--status-warning-bg:var(--amber-100);--status-error:var(--red-600);--status-error-bg:var(--red-100);--status-info:var(--ice-700);--status-info-bg:var(--ice-100);
+}
+:root{
+--font-display:"Archivo","IBM Plex Sans KR",system-ui,sans-serif;
+--font-sans:"IBM Plex Sans KR","Archivo",system-ui,sans-serif;
+--font-mono:"IBM Plex Mono",ui-monospace,monospace;
+--weight-light:300;--weight-regular:400;--weight-medium:500;--weight-semibold:600;
+/* Scale */
+--fs-display-xl:88px;--fs-display-l:64px;--fs-display-m:48px;--fs-h1:36px;--fs-h2:28px;--fs-h3:22px;--fs-h4:18px;--fs-body-l:17px;--fs-body:15px;--fs-body-s:13px;--fs-caption:12px;--fs-label:11px;
+--lh-tight:1.0; /* @kind other */
+--lh-snug:1.2; /* @kind other */
+--lh-normal:1.5; /* @kind other */
+--lh-relaxed:1.7; /* @kind other */
+
+--tracking-display:-0.02em;--tracking-tight:-0.01em;--tracking-normal:0;--tracking-label:0.14em;--tracking-wide:0.24em;
+/* Roles */
+--type-display-family:var(--font-display);--type-display-weight:500;
+--type-heading-family:var(--font-sans);--type-heading-weight:500;
+--type-body-family:var(--font-sans);--type-body-weight:400;
+--type-label-family:var(--font-display);--type-label-weight:500;
+--type-price-family:var(--font-mono);
+}
+:root{
+--space-0:0;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:24px;--space-6:32px;--space-7:48px;--space-8:64px;--space-9:96px;--space-10:128px;--space-11:160px;
+--gutter-mobile:20px;--gutter-tablet:40px;--gutter-desktop:64px;
+--section-gap:var(--space-10);--container-max:1440px;--content-max:1200px;--text-max:560px;
+--control-h-s:36px;--control-h-m:44px;--control-h-l:56px;--control-h-kiosk:80px;
+--header-h:64px;
+}
+:root{
+/* Radii — Slate is sharp. Everything is 0. */
+--radius-none:0;--radius:0;
+/* Borders */
+--border-w:1px;--border-w-strong:1.5px;
+/* Elevation — used only for floating layers */
+--shadow-none:none;--shadow-float:0 8px 24px -8px rgba(22,24,26,.16);--shadow-overlay:0 24px 64px -16px rgba(22,24,26,.28);
+/* Blur */
+--blur-header:saturate(1.2) blur(16px); /* @kind other */
+--surface-header-glass:rgba(255,255,255,.82);
+/* Motion */
+--ease-standard:cubic-bezier(.2,0,0,1); /* @kind other */
+--ease-exit:cubic-bezier(.4,0,1,1); /* @kind other */
+--dur-fast:120ms; /* @kind other */
+--dur-base:200ms; /* @kind other */
+--dur-slow:400ms; /* @kind other */
+--dur-image:700ms; /* @kind other */
+/* Z */
+--z-header:50; /* @kind other */
+--z-overlay:100; /* @kind other */
+--z-toast:200; /* @kind other */
+--z-tooltip:300; /* @kind other */
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{margin:0;font-family:var(--font-sans);font-size:var(--fs-body);line-height:var(--lh-normal);color:var(--text-primary);background:var(--surface-page)}
+a{color:var(--text-primary);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{color:var(--text-accent)}
+::selection{background:var(--ice-200);color:var(--charcoal-900)}
+:focus-visible{outline:1.5px solid var(--focus-ring);outline-offset:2px}

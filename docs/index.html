@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Slate</title>
+<meta name="description" content="지금 필요한 만큼만. 옷과 물건, 공간을 위한 편집숍.">
+<meta name="theme-color" content="#1F2224">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Slate">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..700&family=IBM+Plex+Sans+KR:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="top">
+  <div class="announce" id="announce">5만원 이상 무료배송 · 성수 팝업 11.20 — 12.08</div>
+  <header class="header">
+    <button class="icon-btn" type="button" aria-label="메뉴" id="menuBtn"><span class="i" data-i="menu"></span></button>
+    <a href="#" class="wordmark" aria-label="Slate 홈">SLATE</a>
+    <div class="header-right">
+      <button class="icon-btn" type="button" aria-label="검색"><span class="i" data-i="search"></span></button>
+      <button class="icon-btn" type="button" aria-label="장바구니" id="bagBtn"><span class="i" data-i="shopping-bag"></span><span class="count" id="bagCount" hidden>0</span></button>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+  <section class="hero" aria-label="2026 Winter Edit">
+    <span class="well-label">HERO — LIFESTYLE · 차분한 여백의 실내 사진</span>
+    <div class="hero-copy">
+      <span class="label label-ice">2026 Winter Edit</span>
+      <h1>Less, but<br>considered.</h1>
+      <p>지금 필요한 만큼만. 겨울을 위한 옷과 물건.</p>
+      <a href="#new-in" class="btn btn-inverse">Shop the edit <span class="i" data-i="arrow-right"></span></a>
+    </div>
+  </section>
+
+  <section id="categories" class="section">
+    <div class="section-head pad">
+      <span class="label">Shop by category</span>
+      <h2>필요한 곳부터.</h2>
+    </div>
+    <div class="cat-scroll" id="cats"></div>
+  </section>
+
+  <section id="new-in" class="section pad">
+    <div class="section-head row">
+      <div>
+        <span class="label">New in</span>
+        <h2>오늘 들어온 것</h2>
+      </div>
+      <a href="#new-in" class="btn btn-ghost btn-s">View all <span class="i" data-i="arrow-right"></span></a>
+    </div>
+    <div class="tabs" role="tablist" aria-label="카테고리" id="tabs"></div>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>이 카테고리의 신상품이 없습니다.</p>
+  </section>
+
+  <section id="popup" class="popup">
+    <div class="popup-img"><span class="well-label">POP-UP INTERIOR 4:3</span></div>
+    <div class="popup-copy">
+      <span class="label label-ink">Pop-up · Seongsu</span>
+      <h2>겨울의 물건들.<br>3주 동안만.</h2>
+      <p>성수동 연무장길 42. 11.20 — 12.08. 키오스크로 재고를 확인하고 바로 결제할 수 있습니다.</p>
+      <div class="btn-row">
+        <button type="button" class="btn btn-primary" id="reserveBtn">방문 예약</button>
+        <a class="btn btn-secondary" href="https://map.naver.com/p/search/%EC%84%B1%EC%88%98%EB%8F%99%20%EC%97%B0%EB%AC%B4%EC%9E%A5%EA%B8%B8%2042" target="_blank" rel="noopener"><span class="i" data-i="map-pin"></span> 길찾기</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-brand">
+    <span class="wordmark wordmark-inv">SLATE</span>
+    <span>지금 필요한 만큼만. 옷과 물건, 공간을 위한 편집숍.</span>
+  </div>
+  <div class="footer-cols" id="footerCols"></div>
+  <div class="footer-bottom"><span>© 2026 Slate</span><span class="mono">KRW · 한국어</span></div>
+</footer>
+
+<nav class="tabbar" aria-label="하단 메뉴" id="tabbar"></nav>
+
+<div class="toast-wrap" aria-live="polite"><div class="toast" id="toast" hidden><span class="i" data-i="check"></span><span id="toastMsg"></span><button type="button" class="toast-action" id="toastAction">보기</button></div></div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
